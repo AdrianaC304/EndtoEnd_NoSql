@@ -14,6 +14,8 @@ services:
       - SINGLE_USER_CREDENTIALS_PASSWORD=ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB
     volumes:
       - ./data:/tmp/data
+  
+
     
   nifi-registry:
     image: apache/nifi-registry:latest
