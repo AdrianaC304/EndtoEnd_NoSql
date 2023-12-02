@@ -14,7 +14,7 @@ services:
       - SINGLE_USER_CREDENTIALS_PASSWORD=ctsBtRBKHRAx69EqUghvvgEvjnaLjFEB
     volumes:
       - ./data:/tmp/data
-      - ./nifi/endtoend.xml:/opt/nifi/nifi-current/conf/endtoend.xml
+  
 
     
   nifi-registry:
