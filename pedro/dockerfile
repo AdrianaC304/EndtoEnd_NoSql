@@ -1,0 +1,12 @@
+
+FROM apache/nifi:latest
+
+# Copia el archivo XML con el template al directorio de conf de NiFi
+COPY ./api-mongo.xml /opt/nifi/nifi-current/conf/
+
+# /opt/nifi/nifi-current/conf
+# Establece el directorio de trabajo
+WORKDIR /opt/nifi/nifi-current/conf/
+
+# Ejecuta el script de inicio de NiFi y carga el template
+CMD ["./nifi.sh", "run"]
